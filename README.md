@@ -29,8 +29,8 @@ A JavaScript name must begin with:<br/>
 ### JavaScript code position
 
 **3** position to put JS code :
-- <head></head>  section of html 
-- <body></body>  section of html
+- head  section of html 
+- body  section of html
 - external javaSript file 
  The best practice is to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML.
 -------------------------------------------------------------
