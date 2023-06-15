@@ -15,3 +15,14 @@ a = 10; // assign the of 10 to a
 
 -**JS Values** : literals(fixed numbers,Strings,...) , Variables (used to store data);
 
+####JavaScript Identifiers 
+Identifiers are JavaScript names.
+
+Identifiers are used to name variables and keywords, and functions.<br/>
+
+A JavaScript name must begin with:<br/>
+
+- A letter (A-Z or a-z)
+- A dollar sign ($)
+- Or an underscore (_)
+--------------------------------------------------------
