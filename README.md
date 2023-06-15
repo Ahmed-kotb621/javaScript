@@ -8,4 +8,5 @@ let a;   //declare variable
 a = 10; // assign the of 10 to a 
 ```
 
+-**JS Values** : literals(fixed numbers,Strings,...) , Variables (used to store data);
 
