@@ -15,7 +15,7 @@ a = 10; // assign the of 10 to a
 
 -**JS Values** : literals(fixed numbers,Strings,...) , Variables (used to store data);
 
-####JavaScript Identifiers 
+#### JavaScript Identifiers 
 Identifiers are JavaScript names.
 
 Identifiers are used to name variables and keywords, and functions.<br/>
@@ -25,4 +25,12 @@ A JavaScript name must begin with:<br/>
 - A letter (A-Z or a-z)
 - A dollar sign ($)
 - Or an underscore (_)
---------------------------------------------------------
+-----------------------------------------------------------
+### JavaScript code position
+
+**3** position to put JS code :
+- <head></head>  section of html 
+- <body></body>  section of html
+- external javaSript file 
+ The best practice is to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML.
+-------------------------------------------------------------
