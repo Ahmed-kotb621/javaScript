@@ -34,7 +34,12 @@ A JavaScript name must begin with:<br/>
 - external javaSript file <br/>
  The best practice is to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML.
 -------------------------------------------------------------
-###Output to screen 
+### Output to screen 
 - window.alert()
 - document.write()
 - console.log()
+
+### variables Declarition (var , let ,const)
+- The **var** keyword is used for declaring variables with function scope or global scope. Variables declared with var are not block-scoped and are accessible throughout the entire function or global scope. They are also subject to hoisting, which means you can access them before their declaration (although their value will be undefined).
+- The **let** keyword allows you to declare a block-scoped variable that can be reassigned. Variables declared with let are limited to the block (a block is typically defined by curly braces {}). This means that the variable is only accessible within the block where it is defined or any nested blocks. let variables are not accessible before their declaration (hoisting doesn't occur).
+- The **const** keyword is used to declare variables that are block-scoped and cannot be reassigned once they are defined. It creates a read-only reference to a value, meaning you cannot assign a new value to the variable. However, if the variable holds an object or an array, the properties or elements of the object or array can be modified.
