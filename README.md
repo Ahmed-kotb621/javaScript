@@ -45,7 +45,7 @@ A JavaScript name must begin with:<br/>
 - The **const** keyword is used to declare variables that are block-scoped and cannot be reassigned once they are defined. It creates a read-only reference to a value, meaning you cannot assign a new value to the variable. However, if the variable holds an object or an array, the properties or elements of the object or array can be modified.
 
 ------------------------------------------------------------------
-### Number Methodes
+### Number Methods
 ``` js
 console.log(("100").toString());
 console.log(100.10.toString());
@@ -66,5 +66,22 @@ console.log(Math.min(10,5,6,22,7));
 console.log(Math.max(10,5,6,22,7));
 console.log(Math.trunc(22.5));
 console.log(Math.pow(2, 5));
+```
+---------------------------------------------------------
+### String methods
+```js
+let myName = "  Ahmed  ";
+
+console.log(myName[2]);               // return char at 2
+console.log(myName.charAt(2));        // cahr at index 2
+console.log(myName.trim());           // remove all spaces 
+console.log(myName.length);           // string length
+console.log(myName.toLowerCase());    // string to lower case
+console.log(myName.toUpperCase());    // string to upper case
+console.log(myName.indexOf("A"));     // output -1 not found
+console.log(myName.lastIndexOf("d")); // begin from the end 
+console.log(myName.slice(0,3));       // start , end
+console.log(myName.repeat(3));        // repeat string 3 times
+console.log(myName.split(""));        //separator[optional], limit[optional]
 ```
 ----------------------------------------------------------
