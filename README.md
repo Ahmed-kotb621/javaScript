@@ -55,3 +55,16 @@ console.log(parseInt('100 ahmed'));
 console.log(parseFloat(1000.20));
 console.log(Number.isInteger(100));
 ```
+-----------------------------------------------------------
+### Math object 
+``` js
+console.log(Math.round(10.5));
+console.log(Math.floor(10.5));
+console.log(Math.ceil(10.5));
+console.log(Math.random());
+console.log(Math.min(10,5,6,22,7));
+console.log(Math.max(10,5,6,22,7));
+console.log(Math.trunc(22.5));
+console.log(Math.pow(2, 5));
+```
+----------------------------------------------------------
