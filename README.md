@@ -97,3 +97,16 @@ console.log(a.endsWith("d"));            // end with s
 console.log(a.endsWith("d",5));          // length 5 end with d [ES6]
 ```
 ----------------------------------------------------------
+### Comparison Operators
+```js
+==    // Equal (compare value only)
+!=    // not Equal
+===   // Identical Equal (compare value and type )
+```
+### Logiacl Operators
+```js
+!    // Not
+&&   // And (all terms should achieved)
+||   // one or two terms achieved 
+```
+---------------------------------------------------------------
