@@ -141,3 +141,16 @@ let result = age <20
     : "greater than 20";
 console.log(result);
 ```
+-------------------------------------------------------------------
+### Logical OR || 
+return specific value if value is falsy (null,undefined,falsy)
+```js
+let price = 0;
+console.log(`${price || 200}`);  // return 200 if value is falsy
+```
+### Nullish Coalescing operator ??
+return specific value if value is (null,undefined) only 
+```js
+let price = 0;
+console.log(`${price || 200}`);  // return 0  
+```
