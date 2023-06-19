@@ -83,5 +83,17 @@ console.log(myName.lastIndexOf("d")); // begin from the end
 console.log(myName.slice(0,3));       // start , end
 console.log(myName.repeat(3));        // repeat string 3 times
 console.log(myName.split(""));        //separator[optional], limit[optional]
+
+let a = "Ahmed Sayed";
+
+console.log(a.substring(0,5));           // from index 0 to 5 (not including end)
+console.log(a.substring(5,0));           // swape index
+console.log(a.substring(a.length - 5));  // from end 
+console.log(a.substr(0,5));              // start , no. char 
+console.log(a.includes("Ahmed"));        // return boolean [ES6]
+console.log(a.startsWith("A"));          // start with A [ES6]
+console.log(a.startsWith("h",1));        // index 1 start with h 
+console.log(a.endsWith("d"));            // end with s  
+console.log(a.endsWith("d",5));          // length 5 end with d [ES6]
 ```
 ----------------------------------------------------------
