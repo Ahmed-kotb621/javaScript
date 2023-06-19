@@ -110,3 +110,34 @@ console.log(a.endsWith("d",5));          // length 5 end with d [ES6]
 ||   // one or two terms achieved 
 ```
 ---------------------------------------------------------------
+### If Condition
+```js
+if(condition){
+ // block of code 
+} else if (condition){
+ // block of code
+}else {
+ // else statement
+}
+```
+### Conditional Ternary Operator 
+```js
+let gender="Male";
+let age = 10;
+
+if (gender === "Male"){
+    console.log("Mr");
+}else
+{
+    console.log("Mrs");
+};
+
+gender === "Male" ? console.log("Mr"): console.log("Mrs");
+ 
+let result = age <20 
+    ? "<20" 
+    :age >20 && age <40 
+    ? "between"
+    : "greater than 20";
+console.log(result);
+```
