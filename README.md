@@ -151,6 +151,6 @@ console.log(`${price || 200}`);  // return 200 if value is falsy
 ### Nullish Coalescing operator ??
 return specific value if value is (null,undefined) only 
 ```js
-let price = 0;
-console.log(`${price || 200}`);  // return 0  
+let price = -1;
+console.log(`${price ??= 200}`);  // return -1  
 ```
