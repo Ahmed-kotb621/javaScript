@@ -202,4 +202,17 @@ console.log(names.indexOf("Ahmed"));     // 0
 console.log(names.lastIndexOf("Ahmed")); // 0 from end 
 console.log(names.includes("Ahmed"));    // true
 
+console.log(names2.sort());              // Function used to determine the order of the elements
+console.log(names2.reverse());           // Reverses the elements in an array in place.
+
+console.log(names2.slice(1));             // return array from index 1 to the end
+console.log(names2.slice(1,2));           
+console.log(names2.splice(1,0,"Kotb"));   // add new element from index 1 and delete 0 elements( changes the contents of an array by removing or replacing existing elements)
+
+
+let allNames = names.concat(names2,"Alaa");
+
+console.log(allNames);      
+console.log(names2.join());       // return string seperated by comma ,
+console.log(names2.join(" | "));  // return string seperated by | 
 ```
