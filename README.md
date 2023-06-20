@@ -154,3 +154,23 @@ return specific value if value is (null,undefined) only
 let price = -1;
 console.log(`${price ??= 200}`);  // return -1  
 ```
+--------------------------------------------------------------------
+### Switch statement
+```js
+let day= 2;
+
+switch(day){
+    case 0:
+        console.log("Saturday");
+        break;
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:  // multiple cases 
+    case 3:
+        console.log("Monday");
+        break;   
+    default:
+        console.log("Weeeek end");
+}
+```
