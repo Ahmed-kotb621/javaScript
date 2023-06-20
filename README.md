@@ -174,3 +174,15 @@ switch(day){
         console.log("Weeeek end");
 }
 ```
+-----------------------------------------------------------------------
+### Array 
+```js
+let nums = [1,2,3,4,5];  // default array
+let names = ["Ahmed","Sayed",["Moahmed","kotb"]];  // nested array
+
+console.log(nums[2]);         // access element
+console.log(names[1][0]);     // index 1 first char
+console.log(names[2][1][0]);  // index 1 first char in nested array 
+names[1] = "Ali";             // change element 1
+console.log(Array.isArray(nums));  // check array
+```
