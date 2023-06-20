@@ -185,4 +185,21 @@ console.log(names[1][0]);     // index 1 first char
 console.log(names[2][1][0]);  // index 1 first char in nested array 
 names[1] = "Ali";             // change element 1
 console.log(Array.isArray(nums));  // check array
+console.log(nums.length);     // 5
+
+let names2 = ["Ahmed","Sayed","Mohamed"];
+
+names2.unshift("kotb");   // insert element at the first
+names2.push("kotb");      // insert element at the end 
+
+names2.shift();           // remove first element
+names2.pop();             // remove last element
+
+console.log(names2);
+// Array Methods [search]
+
+console.log(names.indexOf("Ahmed"));     // 0
+console.log(names.lastIndexOf("Ahmed")); // 0 from end 
+console.log(names.includes("Ahmed"));    // true
+
 ```
