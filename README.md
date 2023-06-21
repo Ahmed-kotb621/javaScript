@@ -216,3 +216,12 @@ console.log(allNames);
 console.log(names2.join());       // return string seperated by comma ,
 console.log(names2.join(" | "));  // return string seperated by | 
 ```
+-------------------------------------------------------------------
+### Loops
+#### For Loop
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons.
+```js
+for (let i = 0; i < 9; i++) {
+  console.log(i); // 1-8
+}
+```
