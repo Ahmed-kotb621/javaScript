@@ -18,7 +18,7 @@ a = 10; // assign the value of 10 to a
 #### JavaScript Identifiers 
 Identifiers are JavaScript names.
 
-Identifiers are used to name variables and keywords, and functions.<br/>
+Identifiers are used to name variables , keywords and functions.<br/>
 
 A JavaScript name must begin with:<br/>
 
