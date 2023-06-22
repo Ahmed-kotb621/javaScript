@@ -107,7 +107,7 @@ console.log(result);
 let price = -1;
 console.log(`${price ??= 200}`); 
 */
-
+/*
 let st = "Elzero   Web School";
  
 if ((st.length*2).toString() === "34"){
@@ -117,8 +117,101 @@ if ((st.length*2).toString() === "34"){
 if (st.charAt(st.indexOf("W")).toLowerCase() === "w"){
     console.log("Good");
 }
+*/
 
-// console.log(st.charAt());
-console.log();
+////////////// Switch statement
+/*
+let day= 2;
 
-console.log([1, 2] + [3, 4]);
+switch(day){
+    case 0:
+        console.log("Saturday");
+        break;
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:  // multiple cases 
+    case 3:
+        console.log("Monday");
+        break;   
+    default:
+        console.log("Weeeek end");
+}
+*/
+//////////////////////  Arrays  //////////////////////////////
+/*
+let nums = [1,2,3,4,5];  // default array
+let names = ["Ahmed","Sayed",["Moahmed","kotb"]];  // nested array
+
+console.log(nums[2]);  // access element
+console.log(names[1][0]); // index 1 first char
+console.log(names[2][1][0]); // index 1 first char in nested array
+names[1] = "Ali";   // change element 1
+console.log(Array.isArray(nums));  // check array
+console.log(nums.length);  // check array
+
+let names2 = ["Ahmed","Sayed","Mohamed"];
+
+names2.unshift("kotb");   // insert element at the first
+names2.push("kotb");      // insert element at the end 
+
+names2.shift();           // remove first element
+names2.pop();             // remove last element
+
+console.log(names2);
+
+console.log(names2.indexOf("Ahmed"));
+console.log(names2.lastIndexOf("Ahmed"));
+console.log(names2.includes("Ahmed"));
+
+console.log(names2.sort());
+console.log(names2.reverse());
+// console.log(names.lastIndexOf("Ahmed"));
+ 
+
+console.log(names2.slice(1));
+console.log(names2.slice(1,2));
+console.log(names2.splice(1,0,"Kotb"));
+console.log(names2);
+
+
+let allNames = names.concat(names2,"Alaa");
+
+console.log(allNames);
+console.log(names2.join());
+console.log(names2.join(" | "));
+*/
+/*
+let zero =0;
+let counter=3;
+let my=["Ahmed","Mazero","Elham","Osama","Gamal","Ameer"];
+ 
+// console.log(my.slice(zero,++counter).reverse());
+
+ 
+// console.log(my.slice(++zero,counter).reverse());
+
+console.log("El" + my[1].slice(2));
+*/
+
+// function maskify(cc){
+//     let len = cc.length-3;
+//     let a = cc.split("");
+
+//     console.log(len);
+// }
+
+// maskify("CCCCCCCCCCCCCCCCCCCC");
+
+let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
+let namesOnly =[];
+
+ 
+for(let i=0;i< allElements.length ;i++){
+     
+    if (typeof allElements[i] === "string"){
+        namesOnly.push(allElements[i]);
+    }
+
+};
+console.log(namesOnly);
