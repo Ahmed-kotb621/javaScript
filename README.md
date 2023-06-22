@@ -18,7 +18,7 @@ a = 10; // assign the value of 10 to a
 #### JavaScript Identifiers 
 Identifiers are JavaScript names.
 
-Identifiers are used to name variables and keywords, and functions.<br/>
+Identifiers are used to name variables , keywords and functions.<br/>
 
 A JavaScript name must begin with:<br/>
 
@@ -153,4 +153,89 @@ return specific value if value is (null,undefined) only
 ```js
 let price = -1;
 console.log(`${price ??= 200}`);  // return -1  
+```
+--------------------------------------------------------------------
+### Switch statement
+```js
+let day= 2;
+
+switch(day){
+    case 0:
+        console.log("Saturday");
+        break;
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:  // multiple cases 
+    case 3:
+        console.log("Monday");
+        break;   
+    default:
+        console.log("Weeeek end");
+}
+```
+-----------------------------------------------------------------------
+### Array 
+```js
+let nums = [1,2,3,4,5];  // default array
+let names = ["Ahmed","Sayed",["Moahmed","kotb"]];  // nested array
+
+console.log(nums[2]);         // access element
+console.log(names[1][0]);     // index 1 first char
+console.log(names[2][1][0]);  // index 1 first char in nested array 
+names[1] = "Ali";             // change element 1
+console.log(Array.isArray(nums));  // check array
+console.log(nums.length);     // 5
+
+let names2 = ["Ahmed","Sayed","Mohamed"];
+
+names2.unshift("kotb");   // insert element at the first
+names2.push("kotb");      // insert element at the end 
+
+names2.shift();           // remove first element
+names2.pop();             // remove last element
+
+console.log(names2);
+// Array Methods [search]
+
+console.log(names.indexOf("Ahmed"));     // 0
+console.log(names.lastIndexOf("Ahmed")); // 0 from end 
+console.log(names.includes("Ahmed"));    // true
+
+console.log(names2.sort());              // Function used to determine the order of the elements
+console.log(names2.reverse());           // Reverses the elements in an array in place.
+
+console.log(names2.slice(1));             // return array from index 1 to the end
+console.log(names2.slice(1,2));           
+console.log(names2.splice(1,0,"Kotb"));   // add new element from index 1 and delete 0 elements( changes the contents of an array by removing or replacing existing elements)
+
+
+let allNames = names.concat(names2,"Alaa");
+
+console.log(allNames);      
+console.log(names2.join());       // return string seperated by comma ,
+console.log(names2.join(" | "));  // return string seperated by | 
+```
+-------------------------------------------------------------------
+### Loops
+#### For Loop
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons.
+```js
+for (let i = 0; i < 9; i++) {
+  console.log(i); // 1-8
+}
+
+loop on seqeunes
+let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
+let namesOnly =[];
+
+ 
+for(let i=0;i< allElements.length ;i++){
+     
+    if (typeof allElements[i] === "string"){
+        namesOnly.push(allElements[i]);
+    }
+
+};
+console.log(namesOnly);
 ```
