@@ -226,7 +226,7 @@ for (let i = 0; i < 9; i++) {
 }
 
 loop on seqeunes
-let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
+let allElements =[1,2,3,"Ahmed","Ali",4,5,"Mohamed",6];
 let namesOnly =[];
 
  
@@ -238,4 +238,25 @@ for(let i=0;i< allElements.length ;i++){
 
 };
 console.log(namesOnly);
+```
+### Break & Continue
+```js
+for(let i=0;i< allElements.length ;i++){
+     
+    if (typeof allElements[i] === "number"){
+        continue;
+    }
+    console.log(allElements[i]);      //Ahmed,Ali,Mohamed
+};
+
+
+ 
+for(let i=0;i< allElements.length ;i++){
+     
+    if (allElements[i] === "Ali"){
+        break;
+    }
+    console.log(allElements[i]);     //1,2,3,Ahmed
+};
+
 ```
