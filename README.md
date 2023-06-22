@@ -224,7 +224,7 @@ The for statement creates a loop that consists of three optional expressions, en
 for (let i = 0; i < 9; i++) {
   console.log(i); // 1-8
 }
-</br>
+
 loop on seqeunes
 let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
 let namesOnly =[];
