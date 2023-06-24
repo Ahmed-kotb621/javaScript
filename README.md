@@ -343,3 +343,13 @@ Team Members :
 -2 Sameh
 -7 Samia
 
+### Functions 
+```js
+function rangeYears(start,end){
+    for(let i=start;i<end;i++){
+        console.log(i);
+    }
+}
+
+rangeYears(2000,2020);
+```
