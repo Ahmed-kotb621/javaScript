@@ -267,3 +267,20 @@ for (;;) {
   }
 ```
 ### Example
+
+```js
+let products =["Iphone","Samsung","oppo","Hp","Dell","Vivo"];
+let colors =["Red","Green","Blue"];
+let counter =4;
+
+document.write(`<h1>Show ${counter} products</h1>`);
+for(let i=0;i<counter;i++){
+    document.write(`<div>`);
+    document.write(`<h3>${products[i]}</h3>`);
+    document.write(`${colors.join(" - ")}`); 
+    document.write(`</div>`);
+}
+
+//Iphone
+//Red - Green - Blue
+```
