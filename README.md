@@ -259,4 +259,11 @@ for(let i=0;i< allElements.length ;i++){
     console.log(allElements[i]);     //1,2,3,Ahmed
 };
 
+let i=0;
+for (;;) {
+    if(i>3) break;
+    console.log(i);
+    i++;
+  }
 ```
+### Example
