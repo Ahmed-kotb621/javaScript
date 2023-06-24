@@ -326,3 +326,20 @@ for (let i = 0; i < adminlength; i++) {
 }
 
 ```
+##### Output
+We Have X Admins
+We Have 3 Admins
+The Admin For Team 1 is Ahmed
+Team Members :
+-1 Amged
+-3 Ameer
+-6 Amany
+The Admin For Team 2 is Osama
+Team Members :
+-4 Omar
+-5 Othman
+The Admin For Team 3 is Sayed
+Team Members :
+-2 Sameh
+-7 Samia
+
