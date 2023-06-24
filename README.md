@@ -284,3 +284,45 @@ for(let i=0;i<counter;i++){
 //Iphone
 //Red - Green - Blue
 ```
+
+### While Loop
+```js
+let i=0;
+while(i<products.length){
+    console.log(products[i]);
+    i++;
+}
+```
+
+### Looping Challange
+
+```js
+
+let admins =["Ahmed","Osama","Sayed","Stop","Samera"];
+
+let employees=["Amged","Sameh","Ameer","Omar","Othman","Amany","Samia"];
+
+let adminlength = 0;
+ 
+for(i=0;i<admins.length;i++){
+
+    if(admins[i] === "Stop") break;
+    adminlength++;
+}
+
+document.write(`<h2>We Have X Admins </h2>`);
+document.write(`<h2>We Have ${adminlength} Admins </h2>`);
+document.write(`<hr>`);
+
+
+for (let i = 0; i < adminlength; i++) {
+    document.write(`<h2>The Admin For Team ${i+1} is ${admins[i]}</h2>`);
+    document.write(`<h2>Team Members : </h2>`);
+    for (let j = 0; j < employees.length; j++) {
+        if(employees[j][0] === admins[i][0]){
+            document.write(`<p>-${j+1} ${employees[j]}</p>`);
+        }
+    }
+}
+
+```
