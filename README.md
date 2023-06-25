@@ -364,7 +364,9 @@ function rangeYears(start = 20,end = 40){   // default parametars
 rangeYears();
 ```
 ### Function (rest parameters)
-take any number of arguments (Array of arguments)
+take any number of arguments (Array of arguments) </br>
+only one rest parameter </br>
+
 ```js
 function sumOfNumbers(...numbers){    
     let result=0;
@@ -375,4 +377,29 @@ function sumOfNumbers(...numbers){
 }
 
 console.log(sumOfNumbers(10,20,30,10,20));
+```
+##### Random parameters
+```js
+
+function showDetails(...info){
+    let name,age,status,available;
+    for(let i=0;i<info.length;i++){
+
+        typeof info[i] === "string" 
+        ? name = info[i] 
+        :typeof info[i] === "number"
+        ? age = info[i] 
+        : typeof info[i] === "boolean" 
+        ? status =info[i] 
+        : status === true 
+        ? available = "Your are available" 
+        :available = "Your are not available";
+    }
+    console.log(`hello, ${name}, Your age is ${age}, ${available}`);
+}
+
+showDetails("Osama",38,true);
+showDetails(true,"osama",20);
+showDetails(25,"osama",true);
+showDetails(true,30,"ahmed");
 ```
