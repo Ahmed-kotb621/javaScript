@@ -353,3 +353,13 @@ function rangeYears(start,end){
 
 rangeYears(2000,2020);
 ```
+#### Default Parametars
+```js
+function rangeYears(start = 20,end = 40){   // default parametars
+    for(let i=start;i<end;i++){
+        console.log(i);
+    }
+}
+
+rangeYears();
+```
