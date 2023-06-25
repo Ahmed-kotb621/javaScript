@@ -403,3 +403,14 @@ showDetails(true,"osama",20);
 showDetails(25,"osama",true);
 showDetails(true,30,"ahmed");
 ```
+
+### Anonymous Function 
+function without name 
+```html
+<button id="show">Show</button>
+```
+```js
+document.getElementById("show").onclick = function (){
+    console.log("Show");
+}
+```
