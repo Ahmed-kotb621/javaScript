@@ -363,3 +363,16 @@ function rangeYears(start = 20,end = 40){   // default parametars
 
 rangeYears();
 ```
+### Function (rest parameters)
+take any number of arguments (Array of arguments)
+```js
+function sumOfNumbers(...numbers){    
+    let result=0;
+    for(let i=0;i<numbers.length;i++){
+        result += numbers[i];
+    }    
+    return result;
+}
+
+console.log(sumOfNumbers(10,20,30,10,20));
+```
