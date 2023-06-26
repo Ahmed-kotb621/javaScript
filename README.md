@@ -414,3 +414,15 @@ document.getElementById("show").onclick = function (){
     console.log("Show");
 }
 ```
+### Arrow Function
+Regular Fuction 
+```js
+function count(num1,num2){
+    return num1,num2;
+}
+```
+Arrow Function
+```js
+let count =(num1,num2) => num1 + num2;
+console.log(count(10,20));
+```
