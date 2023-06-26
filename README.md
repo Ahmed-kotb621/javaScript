@@ -426,3 +426,16 @@ Arrow Function
 let count =(num1,num2) => num1 + num2;
 console.log(count(10,20));
 ```
+Regular Function 
+```js
+let names = function (...name) {
+   console.log(`String [${name.join(" ],[ ")}] => Done`);
+};
+```
+Arrow Function 
+```js
+let names = (...name) => console.log(`String [${name.join(" ],[ ")}] => Done`);
+
+console.log(names("osama", "mohamed", "ali", "ibrahim"));
+```
+output => String [osama ],[ mohamed ],[ ali ],[ ibrahim] => Done
