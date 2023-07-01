@@ -462,3 +462,13 @@ let add = numbers.map((el) => el + el) ;
 
 console.log(add);
 ```
+##### Map Example (Swapping Cases) 
+```js
+let str = "aHmED";   // first convert String to Array
+// maps work with array only 
+let res = str.split("").map(function (el,ind,arr){
+    return el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase();
+},10);
+
+console.log(res.join(""));
+```
