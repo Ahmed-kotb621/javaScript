@@ -483,3 +483,16 @@ let filterNumbers = numbers.filter(function(el){
 
 console.log(filterNumbers);
 ```
+
+### Reduce Function 
+return single value 
+```js
+let numbers =[10,20,15,30];
+
+let reduceNumbers = numbers.reduce(function (acc,curr,ind,arr){
+    return acc + curr;
+},5);
+
+console.log(reduceNumbers);
+```
+output=>80;   
