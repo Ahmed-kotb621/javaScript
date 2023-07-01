@@ -439,3 +439,26 @@ let names = (...name) => console.log(`String [${name.join(" ],[ ")}] => Done`);
 console.log(names("osama", "mohamed", "ali", "ibrahim"));
 ```
 output => String [osama ],[ mohamed ],[ ali ],[ ibrahim] => Done
+
+### Higher Order Function 
+#### Map Fuction 
+Calls a defined callback function on each element of an array, and returns an array that contains the results.
+```js
+let numbers =[1,2,3,4,5,6];
+
+let add = numbers.map(function (element,index,arr){
+    return element + element;
+},10);
+
+console.log(add);
+```
+output=>  [2, 4, 6, 8, 10, 12];
+
+##### Map To Arrow Function
+```js
+let numbers =[1,2,3,4,5,6];
+
+let add = numbers.map((el) => el + el) ;
+
+console.log(add);
+```
