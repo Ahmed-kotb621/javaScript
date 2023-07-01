@@ -472,3 +472,14 @@ let res = str.split("").map(function (el,ind,arr){
 
 console.log(res.join(""));
 ```
+#### Filter Function
+return new Array
+```js
+let numbers =[1,2,3,4,5,6];
+
+let filterNumbers = numbers.filter(function(el){
+    return el % 2 == 0;
+});
+
+console.log(filterNumbers);
+```
