@@ -496,3 +496,31 @@ let reduceNumbers = numbers.reduce(function (acc,curr,ind,arr){
 console.log(reduceNumbers);
 ```
 output=>80;   
+
+### forEach Function
+On li item click remove active class from all li items and add it to clicked item
+
+```html
+ <ul>
+    <li class="active">One</li>
+    <li>Two</li>
+    <li>Three</li>
+   </ul>
+
+   <div class="content">
+    <div>One</div>
+   <div>Two</div>
+   <div>Three</div>
+   </div>
+```
+```js
+
+allLis.forEach(function(el){
+    el.onclick = function(){
+        allLis.forEach(function(el){
+            el.classList.remove("active");
+        });
+        this.classList.add("active");
+    }
+});
+```
