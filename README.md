@@ -539,7 +539,7 @@ console.log(user.theName);
 console.log(user.sayhello());
 ```
 #### Accessing object 
-If prperty name not valid (numbers , space,special chars,..) access by barcket notation not (.) notation
+If property name not valid (numbers , space,special chars,..) access by barcket notation not (.) notation
 ```js
 let user ={
     theName:"Ahmed",
