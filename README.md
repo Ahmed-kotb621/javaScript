@@ -524,3 +524,33 @@ allLis.forEach(function(el){
     }
 });
 ```
+### Object
+object is a javascript datatype contain properties and methods .
+```js
+let user ={
+    theName:"Ahmed",
+    theAge:23,
+    sayhello:function(){
+        return `welcome ${this.theName}`;
+    }
+};
+console.log(user.theAge);
+console.log(user.theName);
+console.log(user.sayhello());
+```
+#### Accessing object 
+If prperty name not valid (numbers , space,special chars,..) access by barcket notation not (.) notation
+```js
+let user ={
+    theName:"Ahmed",
+    theAge:23,
+    "user name":"Ahmed kotb",   // not valid (number,space,etc..)
+    sayhello:function(){
+        return `welcome ${this.theName}`;
+    }
+};
+console.log(user.theAge);        // dot notation
+console.log(user.theName);
+console.log(user["user name"]);  // bracket notation
+console.log(user.sayhello());
+```
