@@ -203,15 +203,174 @@ console.log("El" + my[1].slice(2));
 
 // maskify("CCCCCCCCCCCCCCCCCCCC");
 
-let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
-let namesOnly =[];
+let allElements = [1, 2, 3, "Ahmed", "Ali", 4, 5, "Moahmed", 6];
+let namesOnly = [];
+
+
+// for(let i=0;i< allElements.length ;i++){
+
+//     if (allElements[i] === "Ali"){
+//         break;
+//     }
+//     console.log(allElements[i])
+// };
+
+
+// let products =["Iphone","Samsung","oppo","Hp","Dell","Vivo"];
+// let colors =["Red","Green","Blue"];
+// let counter =4;
+
+// document.write(`<h1>Show ${counter} products</h1>`);
+// for(let i=0;i<counter;i++){
+//     document.write(`<div>`);
+//     document.write(`<h3>${products[i]}</h3>`);
+//     document.write(`${colors.join(" - ")}`); 
+//     document.write(`</div>`);
+// }
+
+// let i=0;
+// while(i<products.length){
+//     console.log(products[i]);
+//     i++;
+// }
+
+//////////////////////////////////////////
+
+// let admins =["Ahmed","Osama","Sayed","Stop","Samera"];
+
+// let employees=["Amged","Sameh","Ameer","Omar","Othman","Amany","Samia"];
+
+// let adminlength = 0;
+
+// for(i=0;i<admins.length;i++){
+
+//     if(admins[i] === "Stop") break;
+//     adminlength++;
+// }
+
+// document.write(`<h2>We Have X Admins </h2>`);
+// document.write(`<h2>We Have ${adminlength} Admins </h2>`);
+// document.write(`<hr>`);
+
+
+// for (let i = 0; i < adminlength; i++) {
+//     document.write(`<h2>The Admin For Team ${i+1} is ${admins[i]}</h2>`);
+//     document.write(`<h2>Team Members : </h2>`);
+//     for (let j = 0; j < employees.length; j++) {
+//         if(employees[j][0] === admins[i][0]){
+//             document.write(`<p>-${j+1} ${employees[j]}</p>`);
+//         }
+//     }
+// }
+
+/*
+function rangeYears(start = 20,end = 40){   // default parametars
+    for(let i=start;i<end;i++){
+        console.log(i);
+    }
+}
+
+rangeYears();
+*/
+
+// Function Rest parameters
+/*
+function sumOfNumbers(...numbers){    
+    let result=0;
+    for(let i=0;i<numbers.length;i++){
+        result += numbers[i];
+    }    
+    return result;
+}
+
+console.log(sumOfNumbers(10,20,30,10,20));
+*/
+// let x = "name";
+// if(typeof x === "string"){
+//     console.log("String");
+// }else{
+//     console.log("not String");
+// };
+
+// typeof x === "string" ? console.log("String"):  console.log("not String");
+
+//////////////////////////////////
+/*
+function showDetails(...info){
+    let name,age,status,available;
+    for(let i=0;i<info.length;i++){
+
+        typeof info[i] === "string" 
+        ? name = info[i] 
+        :typeof info[i] === "number"
+        ? age = info[i] 
+        : typeof info[i] === "boolean" 
+        ? status =info[i] 
+        : status === true 
+        ? available = "Your are available" 
+        :available = "Your are not available";
+    }
+    console.log(`hello, ${name}, Your age is ${age}, ${available}`);
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+showDetails("Osama",38,true);
+showDetails(true,"osama",20);
+showDetails(25,"osama",true);
+showDetails(true,30,"ahmed");
+*/
+
+// document.getElementById("show").onclick = function (){
+//     console.log("Show");
+// }
+
+// function count(num1,num2){
+//     return num1,num2;
+// }
+
+// let count =(num1,num2) => num1 + num2;
+
+// console.log(count(10,20));
+
+// let names = function (...name) {
+//     console.log(`String [${name.join(" ],[ ")}] => Done`);
+// }
+
+// let names = (...name) => console.log(`String [${name.join(" ],[ ")}] => Done`);
+
+
+// console.log(names("osama", "mohamed", "ali", "ibrahim"));
+ 
+// let allLis = document.querySelectorAll("ul li");
+// let allDivs= document.querySelectorAll(".content div");
+
+// allLis.forEach(function(el){
+//     el.onclick = function(){
+//         allLis.forEach(function(el){
+//             el.classList.remove("active");
+//         });
+//         this.classList.add("active");
+//     }
+// });
 
  
-for(let i=0;i< allElements.length ;i++){
-     
-    if (typeof allElements[i] === "string"){
-        namesOnly.push(allElements[i]);
-    }
+// var w =8;
 
+// if( w%2 === 0 && w !==2){
+//     console.log("YES");
+// }else{
+//     console.log("NO");
+// }
+
+// create object 
+let user ={
+    theName:"Ahmed",
+    theAge:23,
+    "user name":"Ahmed kotb",
+    sayhello:function(){
+        return `welcome ${this.theName}`;
+    }
 };
-console.log(namesOnly);
+console.log(user.theAge);
+console.log(user.theName);
+console.log(user["user name"]);  // bracket notation
+console.log(user.sayhello());
