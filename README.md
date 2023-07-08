@@ -226,7 +226,7 @@ for (let i = 0; i < 9; i++) {
 }
 
 loop on seqeunes
-let allElements =[1,2,3,"Ahmed","Ali",4,5,"Moahmed",6];
+let allElements =[1,2,3,"Ahmed","Ali",4,5,"Mohamed",6];
 let namesOnly =[];
 
  
@@ -238,4 +238,319 @@ for(let i=0;i< allElements.length ;i++){
 
 };
 console.log(namesOnly);
+```
+### Break & Continue
+```js
+for(let i=0;i< allElements.length ;i++){
+     
+    if (typeof allElements[i] === "number"){
+        continue;
+    }
+    console.log(allElements[i]);      //Ahmed,Ali,Mohamed
+};
+
+
+ 
+for(let i=0;i< allElements.length ;i++){
+     
+    if (allElements[i] === "Ali"){
+        break;
+    }
+    console.log(allElements[i]);     //1,2,3,Ahmed
+};
+
+let i=0;
+for (;;) {
+    if(i>3) break;
+    console.log(i);
+    i++;
+  }
+```
+### Example
+
+```js
+let products =["Iphone","Samsung","oppo","Hp","Dell","Vivo"];
+let colors =["Red","Green","Blue"];
+let counter =4;
+
+document.write(`<h1>Show ${counter} products</h1>`);
+for(let i=0;i<counter;i++){
+    document.write(`<div>`);
+    document.write(`<h3>${products[i]}</h3>`);
+    document.write(`${colors.join(" - ")}`); 
+    document.write(`</div>`);
+}
+
+//Iphone
+//Red - Green - Blue
+```
+
+### While Loop
+```js
+let i=0;
+while(i<products.length){
+    console.log(products[i]);
+    i++;
+}
+```
+
+### Looping Challange
+
+```js
+
+let admins =["Ahmed","Osama","Sayed","Stop","Samera"];
+
+let employees=["Amged","Sameh","Ameer","Omar","Othman","Amany","Samia"];
+
+let adminlength = 0;
+ 
+for(i=0;i<admins.length;i++){
+
+    if(admins[i] === "Stop") break;
+    adminlength++;
+}
+
+document.write(`<h2>We Have X Admins </h2>`);
+document.write(`<h2>We Have ${adminlength} Admins </h2>`);
+document.write(`<hr>`);
+
+
+for (let i = 0; i < adminlength; i++) {
+    document.write(`<h2>The Admin For Team ${i+1} is ${admins[i]}</h2>`);
+    document.write(`<h2>Team Members : </h2>`);
+    for (let j = 0; j < employees.length; j++) {
+        if(employees[j][0] === admins[i][0]){
+            document.write(`<p>-${j+1} ${employees[j]}</p>`);
+        }
+    }
+}
+
+```
+##### Output
+We Have X Admins
+We Have 3 Admins
+The Admin For Team 1 is Ahmed
+Team Members :
+-1 Amged
+-3 Ameer
+-6 Amany
+The Admin For Team 2 is Osama
+Team Members :
+-4 Omar
+-5 Othman
+The Admin For Team 3 is Sayed
+Team Members :
+-2 Sameh
+-7 Samia
+
+### Functions 
+```js
+function rangeYears(start,end){
+    for(let i=start;i<end;i++){
+        console.log(i);
+    }
+}
+
+rangeYears(2000,2020);
+```
+#### Default Parametars
+```js
+function rangeYears(start = 20,end = 40){   // default parametars
+    for(let i=start;i<end;i++){
+        console.log(i);
+    }
+}
+
+rangeYears();
+```
+### Function (rest parameters)
+take any number of arguments (Array of arguments) </br>
+only one rest parameter </br>
+
+```js
+function sumOfNumbers(...numbers){    
+    let result=0;
+    for(let i=0;i<numbers.length;i++){
+        result += numbers[i];
+    }    
+    return result;
+}
+
+console.log(sumOfNumbers(10,20,30,10,20));
+```
+##### Random parameters
+```js
+
+function showDetails(...info){
+    let name,age,status,available;
+    for(let i=0;i<info.length;i++){
+
+        typeof info[i] === "string" 
+        ? name = info[i] 
+        :typeof info[i] === "number"
+        ? age = info[i] 
+        : typeof info[i] === "boolean" 
+        ? status =info[i] 
+        : status === true 
+        ? available = "Your are available" 
+        :available = "Your are not available";
+    }
+    console.log(`hello, ${name}, Your age is ${age}, ${available}`);
+}
+
+showDetails("Osama",38,true);
+showDetails(true,"osama",20);
+showDetails(25,"osama",true);
+showDetails(true,30,"ahmed");
+```
+
+### Anonymous Function 
+function without name 
+```html
+<button id="show">Show</button>
+```
+```js
+document.getElementById("show").onclick = function (){
+    console.log("Show");
+}
+```
+### Arrow Function
+Regular Fuction 
+```js
+function count(num1,num2){
+    return num1,num2;
+}
+```
+Arrow Function
+```js
+let count =(num1,num2) => num1 + num2;
+console.log(count(10,20));
+```
+Regular Function 
+```js
+let names = function (...name) {
+   console.log(`String [${name.join(" ],[ ")}] => Done`);
+};
+```
+Arrow Function 
+```js
+let names = (...name) => console.log(`String [${name.join(" ],[ ")}] => Done`);
+
+console.log(names("osama", "mohamed", "ali", "ibrahim"));
+```
+output => String [osama ],[ mohamed ],[ ali ],[ ibrahim] => Done
+
+### Higher Order Function 
+#### Map Fuction 
+Calls a defined callback function on each element of an array, and returns an array that contains the results.
+```js
+let numbers =[1,2,3,4,5,6];
+
+let add = numbers.map(function (element,index,arr){
+    return element + element;
+},10);
+
+console.log(add);
+```
+output=>  [2, 4, 6, 8, 10, 12];
+
+##### Map To Arrow Function
+```js
+let numbers =[1,2,3,4,5,6];
+
+let add = numbers.map((el) => el + el) ;
+
+console.log(add);
+```
+##### Map Example (Swapping Cases) 
+```js
+let str = "aHmED";   // first convert String to Array
+// maps work with array only 
+let res = str.split("").map(function (el,ind,arr){
+    return el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase();
+},10);
+
+console.log(res.join(""));
+```
+#### Filter Function
+return new Array
+```js
+let numbers =[1,2,3,4,5,6];
+
+let filterNumbers = numbers.filter(function(el){
+    return el % 2 == 0;
+});
+
+console.log(filterNumbers);
+```
+
+### Reduce Function 
+return single value 
+```js
+let numbers =[10,20,15,30];
+
+let reduceNumbers = numbers.reduce(function (acc,curr,ind,arr){
+    return acc + curr;
+},5);
+
+console.log(reduceNumbers);
+```
+output=>80;   
+
+### forEach Function
+On li item click remove active class from all li items and add it to clicked item
+
+```html
+ <ul>
+    <li class="active">One</li>
+    <li>Two</li>
+    <li>Three</li>
+   </ul>
+
+   <div class="content">
+    <div>One</div>
+   <div>Two</div>
+   <div>Three</div>
+   </div>
+```
+```js
+
+allLis.forEach(function(el){
+    el.onclick = function(){
+        allLis.forEach(function(el){
+            el.classList.remove("active");
+        });
+        this.classList.add("active");
+    }
+});
+```
+### Object
+object is a javascript datatype contain properties and methods .
+```js
+let user ={
+    theName:"Ahmed",
+    theAge:23,
+    sayhello:function(){
+        return `welcome ${this.theName}`;
+    }
+};
+console.log(user.theAge);
+console.log(user.theName);
+console.log(user.sayhello());
+```
+#### Accessing object 
+If property name not valid (numbers , space,special chars,..) access by barcket notation not (.) notation
+```js
+let user ={
+    theName:"Ahmed",
+    theAge:23,
+    "user name":"Ahmed kotb",   // not valid (number,space,etc..)
+    sayhello:function(){
+        return `welcome ${this.theName}`;
+    }
+};
+console.log(user.theAge);        // dot notation
+console.log(user.theName);
+console.log(user["user name"]);  // bracket notation
+console.log(user.sayhello());
 ```
