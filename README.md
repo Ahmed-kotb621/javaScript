@@ -576,3 +576,13 @@ console.log(document.getElementsByClassName("active"));
 console.log(document.title);
 console.log(document.links[0].href = "https://www.facebook.com");
 ```
+#### Create Elements using Dom
+```js
+let myDiv = document.createElement("div");
+let myText =document.createTextNode("This is Paragraph");
+let myAtrr =document.createAttribute("custom-data");
+myDiv.appendChild(myText);
+myDiv.setAttributeNode(myAtrr);
+document.body.appendChild(myDiv);
+console.log(myDiv)
+```
