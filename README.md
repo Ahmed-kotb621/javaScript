@@ -554,3 +554,25 @@ console.log(user.theName);
 console.log(user["user name"]);  // bracket notation
 console.log(user.sayhello());
 ```
+### DOM (Document Object Model)
+```html
+<ul>
+    <li class="active">One</li>
+    <li>Two</li>
+    <li>Three</li>
+   </ul>
+
+   <div class="content">
+    <div>One</div>
+   <div>Two</div>
+   <div>Three</div>
+   </div>
+   <a href="http://www.google.com">google</a>
+   <a href="http://www.facebook.com">facebook</a>
+```
+```js
+console.log(document.querySelectorAll("ul")[0].innerHTML);
+console.log(document.getElementsByClassName("active"));
+console.log(document.title);
+console.log(document.links[0].href = "https://www.facebook.com");
+```
