@@ -214,7 +214,8 @@ let allNames = names.concat(names2,"Alaa");
 
 console.log(allNames);      
 console.log(names2.join());       // return string seperated by comma ,
-console.log(names2.join(" | "));  // return string seperated by | 
+console.log(names2.join(" | "));  // return string seperated by |
+let uniqe =[...new Set(array)];    //remove delpicate elements 
 ```
 -------------------------------------------------------------------
 ### Loops
