@@ -615,3 +615,24 @@ btn.onclick = function(){
     clearTimeout(counter2);
 }
 ````
+----------------------------------------------------------
+### setInterval 
+call the function every time
+```js
+setInterval(function(){
+    console.log("Hello");
+},1000);
+```
+```js
+
+let myDiv = document.querySelector("div");
+
+function countDown(){
+    myDiv.innerHTML -= 1;
+    if(myDiv.innerHTML === "0"){
+        clearInterval(counter);
+    }
+};
+
+let counter =setInterval(countDown,2000);
+```
