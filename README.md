@@ -596,3 +596,22 @@ document.addEventListener("click",function(e){
     console.log(e.target);
 })
 ```
+-----------------------------------------------------------
+### setTimeOut 
+function return output after specific time in milli  seconds 
+```js
+let counter = setTimeout(function(){
+    console.log("Hello");
+},3000);
+
+
+let counter2=setTimeout(sayHello,3000,"Ahmed",23);
+
+function sayHello(username,age){
+     console.log(`Hello i am ${username} my age is ${age}`);
+};
+
+btn.onclick = function(){
+    clearTimeout(counter2);
+}
+````
