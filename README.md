@@ -239,6 +239,7 @@ for(let i=0;i< allElements.length ;i++){
 };
 console.log(namesOnly);
 ```
+-----------------------------------------------------------
 ### Break & Continue
 ```js
 for(let i=0;i< allElements.length ;i++){
@@ -284,7 +285,7 @@ for(let i=0;i<counter;i++){
 //Iphone
 //Red - Green - Blue
 ```
-
+-----------------------------------------------------
 ### While Loop
 ```js
 let i=0;
@@ -342,7 +343,7 @@ The Admin For Team 3 is Sayed
 Team Members :
 -2 Sameh
 -7 Samia
-
+-----------------------------------------------------------
 ### Functions 
 ```js
 function rangeYears(start,end){
@@ -403,7 +404,7 @@ showDetails(true,"osama",20);
 showDetails(25,"osama",true);
 showDetails(true,30,"ahmed");
 ```
-
+------------------------------------------------------------------------------
 ### Anonymous Function 
 function without name 
 ```html
@@ -439,7 +440,7 @@ let names = (...name) => console.log(`String [${name.join(" ],[ ")}] => Done`);
 console.log(names("osama", "mohamed", "ali", "ibrahim"));
 ```
 output => String [osama ],[ mohamed ],[ ali ],[ ibrahim] => Done
-
+-------------------------------------------------------------------------
 ### Higher Order Function 
 #### Map Fuction 
 Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -524,6 +525,7 @@ allLis.forEach(function(el){
     }
 });
 ```
+-------------------------------------------------------------------
 ### Object
 object is a javascript datatype contain properties and methods .
 ```js
@@ -554,6 +556,7 @@ console.log(user.theName);
 console.log(user["user name"]);  // bracket notation
 console.log(user.sayhello());
 ```
+-----------------------------------------------------------------
 ### DOM (Document Object Model)
 ```html
 <ul>
