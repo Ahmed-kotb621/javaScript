@@ -586,3 +586,9 @@ myDiv.setAttributeNode(myAtrr);
 document.body.appendChild(myDiv);
 console.log(myDiv)
 ```
+### Accessing elements by AddEventListener 
+```js
+document.addEventListener("click",function(e){
+    console.log(e.target);
+})
+```
