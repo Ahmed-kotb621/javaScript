@@ -636,3 +636,24 @@ function countDown(){
 
 let counter =setInterval(countDown,2000);
 ```
+### BOM (Browser Object Model)
+using window object to create scroll button 
+```js
+let btn = document.querySelector("button");
+
+window.onscroll = function(){
+    if(window.scrollY >= 500){
+        btn.style.display = "block";
+    }else{
+        btn.style.display = "none";
+    }
+}
+
+btn.onclick = function(){
+    window.scrollTo({
+        left:0,
+        top:0,
+        behavior:"smooth"
+    });
+}
+```
