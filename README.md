@@ -657,3 +657,105 @@ btn.onclick = function(){
     });
 }
 ```
+----------------------------------------------------------
+### Local Storage 
+Represents the local storage area. Items in local storage are local to the machine the extension is installed on.
+##### Example (change div color by selecting the color from li items from local storage)
+HTML
+```html
+ <ul>
+        <li class="active" data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="blue"></li>
+        <li data-color="black"></li>
+    </ul>
+    <div class="show"></div>
+    <script src="main.js"></script>
+```
+CSS
+
+```css
+ *{
+            box-sizing: border-box;
+        }
+        body{
+           background-color: #eee;
+        }
+       ul{
+        background: #ddd;
+        width: 400px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 20px;
+        }
+       
+       ul li {
+        width: 60px;
+        height: 60px;
+        background: red;
+        list-style: none;
+        border-radius: 15px;
+        opacity: 0.4;
+        transition: 0.3;
+       }
+       li:hover,
+       ul li.active{
+        opacity: 1;
+       }
+       ul li:first-child{
+        background-color: red;
+       }
+       ul li:nth-child(2){
+        background-color: green;
+       }
+       ul li:nth-child(3){
+        background-color: blue;
+       }
+       ul li:nth-child(4){
+        background-color: black;
+       }
+       .show{
+        width: 400px;
+        height: 300px;
+        background: red;
+        margin: 40px auto;
+        border-radius: 15px;
+       }
+
+```
+JS
+```js
+
+let lis= document.querySelectorAll("ul li");
+let show=document.querySelector(".show");
+
+if(window.localStorage.getItem("color")){
+    show.style.backgroundColor = window.localStorage.getItem("color");
+    lis.forEach((li)=>{
+        li.classList.remove("active");
+    })
+    document.querySelector(`[data-color=${window.localStorage.getItem("color")}]`).classList.add("active");
+}else{
+    console.log("no");
+}
+lis.forEach((el)=>{
+    el.addEventListener("click",(e)=>{
+        console.log(e.currentTarget.dataset.color)
+
+        // remove active class
+        lis.forEach((li)=>{
+            li.classList.remove("active")
+        });
+
+        // add Active class to current li
+        e.currentTarget.classList.add("active");
+        // add current color to local storage
+        window.localStorage.setItem("color",e.currentTarget.dataset.color);
+        // add color to show div
+        show.style.backgroundColor = e.currentTarget.dataset.color;
+
+    })
+});
+```
