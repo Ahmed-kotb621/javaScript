@@ -759,3 +759,6 @@ lis.forEach((el)=>{
     })
 });
 ```
+Output
+![local](https://github.com/Ahmed-kotb621/javaScript/assets/75045581/653b75c1-f65d-486a-8e7d-900694709fbb)
+
