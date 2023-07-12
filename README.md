@@ -761,4 +761,16 @@ lis.forEach((el)=>{
 ```
 Output </br>
 ![local](https://github.com/Ahmed-kotb621/javaScript/assets/75045581/653b75c1-f65d-486a-8e7d-900694709fbb)
+------------------------------------------------------------------
+### Destructuring assignment
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+```js
+let arr = ["Ahmed","Sayed","Mohmed","kotb"];
+
+let [a,b,,d]=arr;
+
+console.log(a); //Ahmed
+console.log(b); //Sayed
+console.log(d); //Kotb
+```
 
