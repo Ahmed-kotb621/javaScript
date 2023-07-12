@@ -773,4 +773,9 @@ console.log(a); //Ahmed
 console.log(b); //Sayed
 console.log(d); //Kotb
 ```
+------------------------------------------------------------
+### Array Methods 
 
+```js
+console.log(Array.from("12345",(num)=> +num + +num));    //get string and create array (+num) convert string to number 
+```
