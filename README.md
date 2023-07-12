@@ -779,3 +779,7 @@ console.log(d); //Kotb
 ```js
 console.log(Array.from("12345",(num)=> +num + +num));    //get string and create array (+num) convert string to number 
 ```
+```js
+let arr =[1,1,1,2,3,3,4];
+console.log([...new Set(arr)]);             // remove duplicate from array and return array
+```
