@@ -783,3 +783,12 @@ console.log(Array.from("12345",(num)=> +num + +num));    //get string and create
 let arr =[1,1,1,2,3,3,4];
 console.log([...new Set(arr)]);             // remove duplicate from array and return array
 ```
+--------------------------------------------------------------
+### RegEx
+```js
+let myString = "in the name of allah, my Name is Ahmed";
+
+let regex = /name/ig;   // i case-insenstive g-> global
+
+console.log(myString.match(regex));
+```
