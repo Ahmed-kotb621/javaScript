@@ -792,3 +792,11 @@ let regex = /name/ig;   // i case-insenstive g-> global
 
 console.log(myString.match(regex));
 ```
+Ranges 
+```js
+let pratice = "Os1 Os1Os Os3 Os8 Os8Os";
+
+let regex = /os[5-8]os/ig;   // [^0-2] not 
+
+console.log(pratice.match(regex));
+```
