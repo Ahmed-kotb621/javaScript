@@ -800,3 +800,24 @@ let regex = /os[5-8]os/ig;   // [^0-2] not
 
 console.log(pratice.match(regex));
 ```
+----------------------------------------------------------
+### OOP (Object-Oriented Programming)
+ is a programming paradigm that organizes code around objects, which are instances of classes. OOP focuses on creating reusable and modular code by encapsulating data and behavior within objects.
+
+### Constructor Function
+ constructor function is a special function that is used to create and initialize objects. It serves as a blueprint for creating multiple objects with similar properties and methods. Constructor functions are typically defined using PascalCase naming convention to distinguish them from regular functions.
+
+ ```js
+function Person(name,age){
+    this.name = name;    // this asign to the object being created and asign value of name to is property
+    this.age =age;
+};
+
+let personOne =new Person("Ahmed",23);
+let personTwo =new Person("Mohamed",20);
+
+personOne.name = "ali";
+
+console.log(personOne.name);
+console.log(personOne.age);
+```
