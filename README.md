@@ -838,3 +838,30 @@ class Person {
 };
 
 ```
+------------------------------------------------------
+### Inheritance
+```js
+// parent class 
+class Parent {
+    constructor(id,name){
+        this.id=id;
+        this.name=name;
+    }
+    sayHello(){
+        return `Hello ${this.name}`
+    }
+};
+
+//Derived class (child)
+
+class Child extends Parent {
+    constructor(id,name,age){
+        super(id,name);
+        this.age =age;
+    }
+};
+
+let child = new Child(100,"Ahmed",20);
+
+console.log(child.sayHello());
+```
