@@ -821,3 +821,20 @@ personOne.name = "ali";
 console.log(personOne.name);
 console.log(personOne.age);
 ```
+#### New Syntex (ES6)
+```js
+class Person {
+    constructor(name, age) {
+        this.name = name || "UN"; // this asign to the object being created and asign value of name to is property
+        this.age = age ;
+        this.msg =function(){
+            return `Hello ${this.name} age ${this.age}`;
+        }
+    }
+
+    helloMsg(){
+        return `Hello ${this.name} age ${this.age}`;
+    }
+};
+
+```
